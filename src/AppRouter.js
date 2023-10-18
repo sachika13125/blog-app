@@ -1,15 +1,13 @@
 // src/AppRouter.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import BlogPost from './components/BlogPost';
+import NewsFeed from './components/NewsFeed';
 
 const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/post/:id" element={<BlogPost />} />
+        <Route path="/" element={<NewsFeed />} />
       </Routes>
     </Router>
   );
