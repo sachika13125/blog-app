@@ -50,6 +50,13 @@ class NewsFeed extends Component {
     this.setState({ searchTerm: '' });
   };
 
+  // Add the favorite articles 
+  addToFavorites = article => {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    favorites.push(article);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  };
+
   render() {
     const { articles, searchTerm } = this.state;
 
@@ -74,6 +81,7 @@ class NewsFeed extends Component {
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read the Detail
               </a>
+              <button onClick={() => this.addToFavorites(article)}>Add to Favorites</button>
             </li>
           ))}
         </ul>
