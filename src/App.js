@@ -1,11 +1,11 @@
 import React from 'react';
 import AppRouter from './AppRouter'; 
+import Navbar from './components/Navbar'
+
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>My Blog App</h1>
-      </header>
+      <Navbar />
       <main>
         <AppRouter />
       </main>
