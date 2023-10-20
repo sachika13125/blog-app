@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import styled from 'styled-components';
 
 
@@ -10,6 +10,7 @@ function Navbar() {
     align-items: center;
     height: 4rem;
     background-color: skyblue;
+    position: relative;
 
     ul {
         display: flex;
@@ -24,14 +25,57 @@ function Navbar() {
 
     a {
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 1.2rem;
     }
 
-    `
+    button {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        flex-directon: column;
+        align-items: flex-start;
+
+
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+            display: ${({ mobileMenuOpen }) => (mobileMenuOpen ? 'flex' : 'none')};
+            position: absolute;
+            top: 4rem;
+            background-color: skyblue; 
+            width: 100%;
+            padding: 1rem;
+            z-index: 1; 
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+
+        a {
+            font-size: 1.5rem;
+        }
+
+        button {
+            display: block;
+            cursor: pointer;
+            width: 4rem;
+            height: 100%;
+            font-size: 2rem;
+        }
+    }
+    `;
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
 
   return (
-    <Header>
+    <Header mobileMenuOpen={mobileMenuOpen}>
         <div>
             <a href='#'>Home</a>
         </div>
@@ -48,6 +92,7 @@ function Navbar() {
                 </li>
             </ul>
         </nav>
+        <button onClick={toggleMobileMenu}>☰</button>
     </Header>
   );
 }

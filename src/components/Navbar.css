@@ -4,4 +4,7 @@ header {
     align-items: center;
     text-decoration: none;
     list-style: none;
+    height: max-content;
+    height: 100%;
+
 }
