@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './NewsFeed.css';
 
 class NewsFeed extends Component {
   constructor() {
@@ -63,14 +64,14 @@ class NewsFeed extends Component {
     return (
       <div>
         <h1>News Feed</h1>
-        <div>
+        <div className='searchbar'>
           <input
             type="text"
             placeholder="Search for news..."
             value={searchTerm}
             onChange={this.handleSearchChange}
           />
-          <button onClick={this.handleSearch}>Search</button>
+          <button onClick={this.handleSearch} id='search-btn'>Search</button>
           <button onClick={this.handleResetSearch}>Reset</button>
         </div>
         <ul>
