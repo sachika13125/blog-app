@@ -1,8 +1,11 @@
+/* Title */
 h1 {
     color: #094067;
     text-align: center;
+    margin-top: 1rem;
 }
 
+/* Search Bar */
 .searchbar {
     text-align: center;
     margin: 2rem;
@@ -40,4 +43,39 @@ input[type="text"]:focus {
     background-color: #094067;
     color: #fffffe;
     font-weight: 700;
+}
+
+/* Article */
+.news-feed ul {
+    margin: 2rem 5rem;
+    list-style: none;
+}
+
+.news-feed li {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 70%;
+    border: 2px solid #fffffe;
+    border-radius: 4px;
+    background-color: #fffffe;
+}
+
+.news-feed h3 {
+    color: #094067;
+    padding-bottom: .5rem;
+}
+
+.news-feed p {
+    color: #5f6c7b;
+    padding-bottom: 1rem;
+}
+
+.news-feed a {
+    text-decoration: none;
+    color: #094067;
+}
+
+.news-feed a:hover {
+    text-decoration: underline;
 }

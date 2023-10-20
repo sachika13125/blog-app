@@ -62,7 +62,7 @@ class NewsFeed extends Component {
     const { articles, searchTerm } = this.state;
 
     return (
-      <div>
+      <div className='news-feed'>
         <h1>News Feed</h1>
         <div className='searchbar'>
           <input
