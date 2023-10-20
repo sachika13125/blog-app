@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import styled from 'styled-components';
-
+import iconImage from '../assets/icons8-newspaper-48.png';
 
 function Navbar() {
 
@@ -77,7 +77,7 @@ function Navbar() {
   return (
     <Header mobileMenuOpen={mobileMenuOpen}>
         <div>
-            <a href='#'>Home</a>
+            <a href='/'><img src={iconImage} alt="icon" /></a>
         </div>
         <nav>
             <ul>
