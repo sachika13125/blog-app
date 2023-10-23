@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 class Favorites extends Component {
   constructor() {
     super();
@@ -8,8 +10,12 @@ class Favorites extends Component {
 
   componentDidMount() {
     // Get favorite articles from local storage
-    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    this.setState({ favorites });
+    try {
+      const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+      this.setState({ favorites });
+    } catch (error) {
+      console.error('localStorage error:', error);
+    }
   }
 
   render() {
@@ -33,3 +39,5 @@ class Favorites extends Component {
     );
   }
 }
+
+export default Favorites;
