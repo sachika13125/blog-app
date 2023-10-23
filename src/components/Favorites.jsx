@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Favorites.css';
 
 class Favorites extends Component {
   constructor() {
@@ -18,12 +19,26 @@ class Favorites extends Component {
     }
   }
 
+  removeFavorite = (index) => {
+    const { favorites } = this.state;
+  
+    // Delete the article from favorites
+    const updatedFavorites = [...favorites];
+    updatedFavorites.splice(index, 1);
+  
+    // Update state and favorite lists
+    this.setState({ favorites: updatedFavorites });
+  
+    // Update local storage
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  }
+
   render() {
     const { favorites } = this.state;
 
     return (
-      <div>
-        <h1>Favorites Page</h1>
+      <div className='favorites'>
+        <h1>Your Favorites</h1>
         <ul>
           {favorites.map((article, index) => (
             <li key={index}>
@@ -32,6 +47,7 @@ class Favorites extends Component {
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read the Deatails
               </a>
+              <button onClick={() => this.removeFavorite(index)}>Remove</button>
             </li>
           ))}
         </ul>

@@ -1,0 +1,55 @@
+.favorites ul {
+    margin: 2rem auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+
+}
+
+.favorites li {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 70%;
+    border: 2px solid #fffffe;
+    border-radius: 4px;
+    background-color: #fffffe;
+}
+
+.favorites h3 {
+    color: #094067;
+    padding-bottom: .5rem;
+}
+
+.favorites p {
+    color: #5f6c7b;
+    padding-bottom: 1rem;
+}
+
+.favorites a {
+    text-decoration: none;
+    color: #094067;
+}
+
+.favorites a:hover {
+    text-decoration: underline;
+}
+
+.favorites button {
+    float: right;
+    padding: .5rem;
+    width: 70px;
+    font-size: .8rem;
+    cursor: pointer;
+    border: 1px solid #094067;
+    border-radius: 4px;
+    background-color: #fffffe;
+    color: #094067;
+}
+
+.favorites button:hover {
+    background-color: #094067;
+    color: #fffffe;
+    transition: .5s;
+}
