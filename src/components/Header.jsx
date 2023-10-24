@@ -44,6 +44,10 @@ function Navbar() {
         display: none;
     }
 
+    .logo {
+        padding-left: 1.5rem;
+    }
+
     @media (max-width: 768px) {
         flex-directon: column;
         align-items: center;
@@ -92,7 +96,7 @@ function Navbar() {
 
   return (
     <Header mobileMenuOpen={mobileMenuOpen}>
-        <div>
+        <div className='logo'>
             <a href='/'><img src={iconImage} alt="icon" /></a>
         </div>
         <nav>
