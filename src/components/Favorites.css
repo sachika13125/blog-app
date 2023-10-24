@@ -1,3 +1,7 @@
+.favorites {
+    min-height: 100vh;
+}
+
 .favorites ul {
     margin: 2rem auto;
     list-style: none;

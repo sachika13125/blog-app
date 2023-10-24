@@ -1,3 +1,7 @@
+.news-feed {
+    min-height: 100vh;
+}
+
 /* Title */
 h1 {
     color: #094067;
