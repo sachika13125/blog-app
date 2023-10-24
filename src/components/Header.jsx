@@ -102,7 +102,7 @@ function Navbar() {
         <nav>
             <ul>
                 <li>
-                    <a href='/'>Feeds</a>
+                    <a href='/newsfeeds'>Feeds</a>
                 </li>
                 <li>
                     <a href='/favorites'>Favorites</a>
