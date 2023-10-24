@@ -79,3 +79,21 @@ input[type="text"]:focus {
 .news-feed a:hover {
     text-decoration: underline;
 }
+
+#favorite {
+    float: right;
+    padding: .3rem;
+    width: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 1px solid #ef4565;
+    border-radius: 4px;
+    background-color: #fffffe;
+    color: #ef4565;
+}
+
+#favorite:hover {
+    background-color: #ef4565;
+    color: #fffffe;
+    transition: .5s;
+}

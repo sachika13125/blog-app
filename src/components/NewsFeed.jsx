@@ -82,7 +82,7 @@ class NewsFeed extends Component {
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read the Detail
               </a>
-              <button onClick={() => this.addToFavorites(article)}>Add to Favorites</button>
+              <button id='favorite' onClick={() => this.addToFavorites(article)}>♥</button>
             </li>
           ))}
         </ul>
