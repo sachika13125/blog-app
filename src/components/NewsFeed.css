@@ -1,12 +1,19 @@
 .news-feed {
     min-height: 100vh;
+    background-color: #d8eefe;
+    background-image: radial-gradient(#90b4ce 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;
 }
 
 /* Title */
 h1 {
     color: #094067;
     text-align: center;
-    margin-top: 1rem;
+    padding-top: 2rem;
 }
 
 /* Search Bar */
@@ -17,7 +24,7 @@ h1 {
 
 input[type="text"] {
     background-color: #fffffe;
-    border: none;
+    border: 1px solid #094067;
     border-radius: 4px;
     font-size: 1rem;
     padding: .5rem;
@@ -52,6 +59,7 @@ input[type="text"]:focus {
 /* Article */
 .news-feed ul {
     margin: 2rem 5rem;
+    margin-bottom: 0;
     list-style: none;
 }
 
@@ -64,6 +72,10 @@ input[type="text"]:focus {
     border-radius: 4px;
     background-color: #fffffe;
 }
+
+/* .news-feed li:last-child {
+    margin-bottom: 0;
+} */
 
 .news-feed h3 {
     color: #094067;

@@ -1,5 +1,11 @@
 .favorites {
     min-height: 100vh;
+    background-image: radial-gradient(#ef4565 2px, transparent 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;
 }
 
 .favorites ul {

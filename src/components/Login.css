@@ -1,6 +1,12 @@
 .login-page {
     min-height: 100vh;
-}
+    background-color: #d8eefe;
+    background-image: radial-gradient(#90b4ce 2px, #ffffff 2px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    z-index: -1;
+    padding: 2rem auto;
+    padding-bottom: 2rem;}
 
 .login-form {
     margin: 2rem auto;
