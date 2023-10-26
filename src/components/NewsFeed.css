@@ -113,3 +113,18 @@ input[type="text"]:focus {
     color: #fffffe;
     transition: .5s;
 }
+
+/* Image */
+.reporter {
+    position: fixed;
+    top: 15%;
+    left: 3%;
+    width: 15vw;
+}
+
+.idea {
+    position: fixed;
+    top: 75%;
+    right: 3%;
+    width: 15vw;
+}

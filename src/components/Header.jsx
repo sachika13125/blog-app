@@ -27,7 +27,7 @@ function Navbar() {
     }
 
     li:hover {
-        background-color: #d8eefe;
+        // background-color: #d8eefe;
         height: 100%;
     }
 
@@ -38,6 +38,10 @@ function Navbar() {
         color: #094067;
         font-size: 1.2rem;
         font-weight: 600;
+    }
+
+    a:hover {
+        color: #ef4565;
     }
 
     button {

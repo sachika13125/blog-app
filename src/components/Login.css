@@ -16,6 +16,10 @@
     border: 2px solid #fffffe;
     border-radius: 4px;
     background-color: #fffffe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login-form label {
@@ -46,4 +50,19 @@
     background-color: #094067;
     color: #fffffe;
     font-weight: 700;
+}
+
+/* image */
+.phone {
+    position: fixed;
+    top: 20%;
+    left: 68%;
+    width: 15vw;
+}
+
+.boy {
+    position: fixed;
+    top: 55%;
+    left: 15%;
+    width: 15vw;
 }

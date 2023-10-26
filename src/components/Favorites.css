@@ -12,16 +12,15 @@
     margin: 2rem auto;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 1rem;
-
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    padding: 0 8rem;
 }
 
 .favorites li {
     margin: 0 auto;
     margin-bottom: 2rem;
     padding: 2rem;
-    width: 70%;
+    width: 65%;
     border: 2px solid #fffffe;
     border-radius: 4px;
     background-color: #fffffe;
@@ -62,4 +61,12 @@
     background-color: #094067;
     color: #fffffe;
     transition: .5s;
+}
+
+/* image */
+.favoriteImg {
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    width: 13vw;
 }

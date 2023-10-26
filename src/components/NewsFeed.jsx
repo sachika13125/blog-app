@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './NewsFeed.css';
+import reporterImage from '../assets/bubble-gum-tv-reporter.png';
+import ideaImage from '../assets/bubble-gum-man-came-up-with-an-idea.png';
 
 class NewsFeed extends Component {
   constructor() {
@@ -86,6 +88,8 @@ class NewsFeed extends Component {
             </li>
           ))}
         </ul>
+        <img className='reporter' src={reporterImage} alt='reporter'/>
+        <img className='idea' src={ideaImage} alt='idea'/>
       </div>
     );
   }
